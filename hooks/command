@@ -9,6 +9,9 @@ echo "$BUILDKITE_BUILD_CHECKOUT_PATH"
 pwd
 ls
 
+docker images
+docker ps
+
 if grep -inr -C1 "🤡" . ; then
   echo "^^^ +++"
   echo "+++ :warning: Detected clowns! 🔪"
