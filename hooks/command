@@ -1,8 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
+set -x
+
 echo "--- Searching for Clowns 🤡"
 echo "$BUILDKITE_BUILD_CHECKOUT_PATH"
+
+pwd
+ls
 
 if grep -inr -C1 "🤡" . ; then
   echo "^^^ +++"
