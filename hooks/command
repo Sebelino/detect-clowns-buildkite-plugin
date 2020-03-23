@@ -12,6 +12,9 @@ ls
 docker images
 docker ps
 
+echo "--- Disk quota"
+df -h
+
 if grep -inr -C1 "🤡" . ; then
   echo "^^^ +++"
   echo "+++ :warning: Detected clowns! 🔪"
